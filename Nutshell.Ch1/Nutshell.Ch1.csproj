@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayTests.cs" />
     <Compile Include="OperatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StructTests.cs" />
     <Compile Include="ValueTypeTests.cs" />
+    <Compile Include="VariablesAndParameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

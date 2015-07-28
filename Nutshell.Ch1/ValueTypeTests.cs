@@ -31,6 +31,9 @@ namespace Nutshell.Ch1
             var dbl = 1.0; // default notation creates double (64 bit)
             Console.WriteLine(sizeof(double) * 8);
 
+            int integer = 1;
+            Console.WriteLine(sizeof(int) * 8);
+
         }
 
         [Test]

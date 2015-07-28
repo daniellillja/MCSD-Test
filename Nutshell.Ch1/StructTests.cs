@@ -57,5 +57,13 @@ namespace Nutshell.Ch1
     {
         public int X;
         public int Y;
+
+        // struct "constructors" MUST assign each instance field
+        // compiler checks for this
+        public PointStruct(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
     }
 }
