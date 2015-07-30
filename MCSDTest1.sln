@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutshell.Ch1", "Nutshell.Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutshell.Ch3", "Nutshell.Ch3\Nutshell.Ch3.csproj", "{0945F929-9DA3-4C2A-86CE-34F3EE555BC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutshell.Ch4", "Nutshell.Ch4\Nutshell.Ch4.csproj", "{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0945F929-9DA3-4C2A-86CE-34F3EE555BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0945F929-9DA3-4C2A-86CE-34F3EE555BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0945F929-9DA3-4C2A-86CE-34F3EE555BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
