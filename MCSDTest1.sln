@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutshell.Ch3", "Nutshell.Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutshell.Ch4", "Nutshell.Ch4\Nutshell.Ch4.csproj", "{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCSDTest.Common", "MCSDTest.Common\MCSDTest.Common.csproj", "{89F8074A-3F50-4212-A2EA-E7C684F741E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{402C10E6-73E4-4D6C-95C8-B78D801F8BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F8074A-3F50-4212-A2EA-E7C684F741E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F8074A-3F50-4212-A2EA-E7C684F741E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F8074A-3F50-4212-A2EA-E7C684F741E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F8074A-3F50-4212-A2EA-E7C684F741E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
