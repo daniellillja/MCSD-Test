@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlTypes;
 using System.Dynamic;
 using Microsoft.CSharp.RuntimeBinder;
 using NUnit.Framework;
@@ -54,7 +55,51 @@ namespace Nutshell.Ch4
                 return true;
             }
         }
+
+        [Test]
+        public void BindingIsDoneBasedOnTheClosestMatch()
+        {
+            object o = "hello";
+            dynamic d = "goodbye";
+            Foo(o, d);
+        }
+
+        // compiler can tell that o will always be an object,
+        // so it is matched to this function
+        // dynamic overload resolution will tell that the second argument is a string
+        private void Foo(object o1, string o2)
+        {
+            Console.WriteLine("os");
+        }
+
+        private void Foo(object o1, object o2)
+        {
+            Console.WriteLine("os");
+        }
+
+        // extension methods cannot be called dynamically
+        // since extension methods are static, the code is always resolved at compile time
+        // by scanning the namespace. Namespaces are only valid for distiniguishing "simple" names
+        // from "fully qualified" names
+        
+        // also, you cannot run dynamic methods on classes casted to interfaces
+        [Test]
+        public void CannotRunDynamicMethodsOnInterfaceCasts()
+        {
+            IFoo f = new Foo();
+            dynamic d = f;
+            Assert.Throws<RuntimeBinderException>(() => d.Foo());
+        }
     }
 
-
+    public interface IFoo
+    {
+        void FooMethod();
+    }
+    public class Foo : IFoo {
+        public void FooMethod()
+        {
+            Console.WriteLine("Foo was called");
+        }
+    }
 }

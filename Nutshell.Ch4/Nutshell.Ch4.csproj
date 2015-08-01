@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnonymousTypesTests.cs" />
+    <Compile Include="AttributesTests.cs" />
+    <Compile Include="CallerInfoAttributeTests.cs" />
     <Compile Include="DelegateTests.cs" />
     <Compile Include="DynamicTests.cs" />
     <Compile Include="EnumeratorTests.cs" />
@@ -53,8 +56,12 @@
     <Compile Include="LambdaTests.cs" />
     <Compile Include="NullableTests.cs" />
     <Compile Include="OperatorOverloadingTests.cs" />
+    <Compile Include="PreprocessorTests.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TryCatchTests.cs" />
+    <Compile Include="UnsafeCodePointersTests.cs" />
+    <Compile Include="XmlDocumentationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
